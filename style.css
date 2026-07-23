@@ -29,3 +29,9 @@ main { padding: 24px 16px; }
 .progress-label { color: #8b95a7; margin: 8px 0; }
 .progress { width: min(520px, 90%); height: 10px; background: #1a2233; border-radius: 999px; margin: 8px auto; overflow: hidden; }
 .progress-bar { width: 0; height: 100%; background: #4ade80; }
+
+#reset { margin-top: 8px; background: #1a2233; color: #e8ecf4; border: 1px solid #2a3550; border-radius: 8px; padding: 6px 14px; cursor: pointer; }
+.square { cursor: pointer; transition: background 0.12s; }
+.square:hover { background: #26324d; }
+.progress-bar { transition: width 0.2s; }
+footer { padding: 24px; color: #5c6680; font-size: 0.9rem; }

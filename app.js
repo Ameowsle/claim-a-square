@@ -21,5 +21,10 @@ function update() {
   bar.style.width = (claimed / SIZE * 100) + "%";
 }
 
+document.getElementById("reset").addEventListener("click", () => {
+  document.querySelectorAll(".square.claimed").forEach((s) => s.classList.remove("claimed"));
+  update();
+});
+
 render();
 update();
