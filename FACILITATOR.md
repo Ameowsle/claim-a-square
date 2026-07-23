@@ -28,9 +28,36 @@ Everyone: `Create a branch called <name>` first, then their task, then
 | 3 | Aurelia | Cards in **slots 10+11**: herself + Jan (team.html) | `In team.html, replace the SLOT 10 comment with a card for me (emoji 🚀, name Aurelia, role <role>) and the SLOT 11 comment with a card for Jan (emoji 🧩, name Jan, role <role>)` |
 | 4 | Jan | **Bigger grid** (app.js) | `Make the grid 12x12 instead of 10x10, and update the counter label to 144` |
 
-(Emojis and color are their own choice. Amelia facilitates, reviews and merges;
-any order works. The CI check runs green on each PR. After each merge, reload
-the live site: cards on team.html, color and grid on the app page.)
+(Emojis and color are their own choice. The CI check runs green on each PR.
+After each merge, reload the live site: cards on team.html, color and grid on
+the app page.)
+
+### Peer review: who reviews whose PR
+
+First, review ONE PR together on the beamer (whoever finishes first) so
+everyone has seen the moves once. Then the ring takes over; everyone reviews
+a type of change they didn't make themselves:
+
+| PR by | Task | Reviewer |
+|-------|------|----------|
+| Henk | cards slots 3+4 | **Jan** |
+| Emely | square color | **Henk** |
+| Aurelia | cards slots 10+11 | **Emely** |
+| Jan | 12x12 grid | **Aurelia** |
+
+**How to review (3 steps, say them out loud):**
+
+1. Ask Claude for a first pass, always with context on what the PR SHOULD do:
+   `Review pull request #<number>. It is supposed to: <task in one sentence>.
+   Tell me in plain language: what changed, does it do what it should, and
+   could it break anything?`
+2. Look yourself: open the PR on GitHub -> **Files changed** -> do the green
+   lines match what Claude said and what the task was? Is the CI check green?
+3. Verdict on GitHub: **Review changes -> Approve** (or write a comment if
+   something looks off). The review is YOUR call, Claude is the assistant.
+
+Amelia merges after approval (mirrors the real repo: reviewers approve,
+merge rights stay small).
 
 ## Round 2: the merge conflicts — Amelia seeds them from main
 
