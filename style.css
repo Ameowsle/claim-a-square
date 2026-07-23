@@ -23,3 +23,5 @@ main { padding: 24px 16px; }
   border-radius: 6px;
   padding: 0;
 }
+
+.square.claimed { background: #4ade80; border-color: #4ade80; }
