@@ -11,3 +11,18 @@ A case study in how a real project grows: one feature at a time, each on its own
 branch and merged through a pull request. Never straight onto `main`.
 
 See the Pull requests tab (filter: Closed) and Insights -> Network.
+
+## Your turn: join the team wall
+
+`team.html` is our team wall. Your task: add your own card, the same way every
+feature above was added. Tell Claude, one step at a time:
+
+1. `Create a branch called <your-name>`
+2. `What branch am I on?` (you should see your name, not main)
+3. Your task from the facilitator (your slot in `team.html`)
+4. `What did I change?`
+5. `Commit my changes`
+6. `Push my changes`
+7. `Open a pull request`
+
+That is the whole loop: branch -> change -> commit -> push -> pull request.
