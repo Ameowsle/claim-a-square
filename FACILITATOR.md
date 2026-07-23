@@ -32,37 +32,42 @@ Everyone: `Create a branch called <name>` first, then their task, then
 any order works. The CI check runs green on each PR. After each merge, reload
 the live site: cards on team.html, color and grid on the app page.)
 
-## Round 2: the merge conflicts — everyone involved
+## Round 2: the merge conflicts — Amelia seeds them from main
 
-Two pairs, two on-purpose conflicts. Each pair adds the same missing person's
-card on the same slot line, each with their own emoji and role wording. Same
-line, two different changes: a guaranteed conflict per pair.
+Everyone gets a conflict, and everyone resolves one themselves. The trigger:
+after all four have branched, **Amelia pushes her own version of the same
+cards straight to main**. Main moves under their feet, the most realistic
+conflict there is.
 
 | Pair | Adds | Slot | Say to Claude |
 |------|------|------|---------------|
 | Emely + Jan | **Amelia** | 7 | `In team.html, replace the SLOT 7 comment with a card for Amelia: emoji <own choice>, name Amelia, role <own wording>` |
 | Henk + Aurelia | **Alejandro** | 12 | `In team.html, replace the SLOT 12 comment with a card for Alejandro: emoji <own choice>, name Alejandro, role <own wording>` |
 
-Slot 7 and slot 12 are far apart, so the two pairs never conflict with each
-other, only within their pair, exactly as planned.
+1. **All four create their branches FIRST** (before Amelia's push, this is
+   what makes the conflicts happen): `Create a branch called <name>-round2`
+2. Everyone makes their change, commits, pushes, opens their PR.
+3. **Amelia's move:** commit directly to main (facilitator privilege in the
+   practice repo, narrate the irony) with her own versions of BOTH cards:
+   Amelia in slot 7, Alejandro in slot 12. One commit, push to main.
+4. Everyone reloads their PR page: all four now show "This branch has
+   conflicts that must be resolved." Let that sink in: nobody did anything
+   wrong, main simply moved while they were working.
+5. Resolve in two parallel queues (slot 7 and slot 12 don't touch):
+   - Slot 7: Emely resolves and merges, then Jan (his conflict is now
+     against Emely's result).
+   - Slot 12: Henk resolves and merges, then Aurelia.
+   Each person clicks **Resolve conflicts** on their own PR, looks at the
+   `<<<<<<<` `=======` `>>>>>>>` markers, decides which version (or mix)
+   wins, deletes the markers, marks as resolved, merges.
+6. Guidance for the deciders: the wall should end with one good card for
+   Amelia and one for Alejandro, which emoji/wording wins is the team's call.
 
-1. **All four create their branches first**, before any round-2 PR is merged
-   (this matters, otherwise there is no conflict):
-   `Create a branch called <name>-round2`
-2. Everyone makes their change, commits, pushes, opens a PR.
-3. Merge Emely's and Henk's PRs (they don't conflict with each other).
-4. Jan's and Aurelia's PRs are now blocked: "This branch has conflicts that
-   must be resolved."
-5. Each pair resolves **together** (both at one screen): click **Resolve
-   conflicts** on the PR, look at the `<<<<<<<` `=======` `>>>>>>>` markers,
-   agree which card (or a mix) wins, delete the markers, mark as resolved,
-   merge. Do Jan's first on the beamer, then Aurelia's.
+Message: a conflict is git asking "which version wins", not a failure. And:
+being "behind main" is normal, this is why you pull before you branch.
 
-Message: a conflict is git asking "which version wins", not a failure.
-Nice ending: the whole team, Amelia and Alejandro included, is on the wall.
-
-**Short on time?** Run only the Emely + Jan conflict on the beamer and skip
-the second pair, the message lands with one.
+**Short on time?** Seed only slot 7 (Amelia's card) and run one queue on the
+beamer with Emely + Jan; Henk + Aurelia watch and resolve next time.
 
 ## Before the workshop
 
