@@ -9,3 +9,17 @@ body {
 header { padding: 40px 16px 8px; }
 h1 { margin: 0 0 8px; font-size: 2rem; }
 main { padding: 24px 16px; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 6px;
+  width: min(520px, 90%);
+  margin: 0 auto;
+}
+.square {
+  aspect-ratio: 1;
+  background: #1a2233;
+  border: 1px solid #2a3550;
+  border-radius: 6px;
+  padding: 0;
+}
