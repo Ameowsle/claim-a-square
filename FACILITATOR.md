@@ -18,10 +18,14 @@ Everyone: `Create a branch called <name>` first, then their task, then
 
 | # | Person | Task | Say to Claude |
 |---|--------|------|---------------|
-| 1 |  | Card in **slot 3** | `In team.html, replace the SLOT 3 comment with a card for me: emoji 🎯, name <name>, role <role>` |
-| 2 |  | Card in **slot 5** | `In team.html, replace the SLOT 5 comment with a card for me: emoji 🌱, name <name>, role <role>` |
-| 3 |  | Card in **slot 7** | `In team.html, replace the SLOT 7 comment with a card for me: emoji 🚀, name <name>, role <role>` |
-| 4 |  | **Footer** date | `In team.html, change the footer text to "Built together at our GitHub workshop, <date>"` |
+| 1 | Henk | Card in **slot 3** | `In team.html, replace the SLOT 3 comment with a card for me: emoji 🎯, name Henk, role <role>` |
+| 2 | Emely | Card in **slot 5** | `In team.html, replace the SLOT 5 comment with a card for me: emoji 🌱, name Emely, role <role>` |
+| 3 | Aurelia | Card in **slot 7** | `In team.html, replace the SLOT 7 comment with a card for me: emoji 🚀, name Aurelia, role <role>` |
+| 4 | Jan | **Footer** date | `In team.html, change the footer text to "Built together at our GitHub workshop, <date>"` |
+
+(Emojis are just suggestions, everyone picks their own. Amelia facilitates,
+reviews and merges. If you run the conflict demo, use Jan + one of the others
+on the motto line, since Jan's footer task is the quickest.)
 
 You (facilitator) review and merge the 4 PRs; any order works. Bonus: the CI
 check runs green on each of their PRs.
