@@ -66,29 +66,30 @@ after all four have branched, **Amelia pushes her own version of the same
 cards straight to main**. Main moves under their feet, the most realistic
 conflict there is.
 
-| Pair | Adds | Slot | Say to Claude |
-|------|------|------|---------------|
-| Emely + Jan | **Amelia** | 7 | `In team.html, replace the SLOT 7 comment with a card for Amelia: emoji <own choice>, name Amelia, role <own wording>` |
-| Henk + Aurelia | **Alejandro** | 12 | `In team.html, replace the SLOT 12 comment with a card for Alejandro: emoji <own choice>, name Alejandro, role <own wording>` |
+| Pair | Changes | Line | Say to Claude |
+|------|---------|------|---------------|
+| Emely + Jan | **Amelia's card** | slot 7 | `In team.html, replace the SLOT 7 comment with a card for Amelia: emoji <own choice>, name Amelia, role <own wording>` |
+| Henk + Aurelia | **The team motto** | motto line | `In team.html, change the motto line to <own new motto>` |
 
 1. **All four create their branches FIRST** (before Amelia's push, this is
    what makes the conflicts happen): `Create a branch called <name>-round2`
 2. Everyone makes their change, commits, pushes, opens their PR.
 3. **Amelia's move:** commit directly to main (facilitator privilege in the
-   practice repo, narrate the irony) with her own versions of BOTH cards:
-   Amelia in slot 7, Alejandro in slot 12. One commit, push to main.
+   practice repo, narrate the irony) with her own versions of BOTH lines:
+   her card in slot 7 AND her own new motto. One commit, push to main.
 4. Everyone reloads their PR page: all four now show "This branch has
    conflicts that must be resolved." Let that sink in: nobody did anything
    wrong, main simply moved while they were working.
-5. Resolve in two parallel queues (slot 7 and slot 12 don't touch):
+5. Resolve in two parallel queues (slot 7 and the motto line don't touch):
    - Slot 7: Emely resolves and merges, then Jan (his conflict is now
      against Emely's result).
-   - Slot 12: Henk resolves and merges, then Aurelia.
+   - Motto: Henk resolves and merges, then Aurelia.
    Each person clicks **Resolve conflicts** on their own PR, looks at the
    `<<<<<<<` `=======` `>>>>>>>` markers, decides which version (or mix)
    wins, deletes the markers, marks as resolved, merges.
 6. Guidance for the deciders: the wall should end with one good card for
-   Amelia and one for Alejandro, which emoji/wording wins is the team's call.
+   Amelia and one motto the team actually likes, which version wins is
+   the team's call.
 
 Message: a conflict is git asking "which version wins", not a failure. And:
 being "behind main" is normal, this is why you pull before you branch.
