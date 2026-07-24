@@ -24,7 +24,7 @@ main { padding: 24px 16px; }
   padding: 0;
 }
 
-.square.claimed { background: #4ade80; border-color: #4ade80; }
+.square.claimed { background: #facc15; border-color: #facc15; }
 
 .progress-label { color: #8b95a7; margin: 8px 0; }
 .progress { width: min(520px, 90%); height: 10px; background: #1a2233; border-radius: 999px; margin: 8px auto; overflow: hidden; }
