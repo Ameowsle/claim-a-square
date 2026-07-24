@@ -1,4 +1,4 @@
-const SIZE = 100;
+const SIZE = 144;
 const grid = document.getElementById("grid");
 const count = document.getElementById("count");
 const bar = document.getElementById("bar");
