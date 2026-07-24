@@ -71,6 +71,9 @@ conflict there is.
 | Emely + Jan | **Amelia's card** | slot 7 | `In team.html, replace the SLOT 7 comment with a card for Amelia: emoji <own choice>, name Amelia, role <own wording>` |
 | Henk + Aurelia | **The team motto** | motto line | `In team.html, change the motto line to <own new motto>` |
 
+0. **Everyone pulls first:** `Pull the latest` — then open your local
+   team.html: all the round-1 cards are suddenly on YOUR machine too.
+   That is what pull does: fetch what others merged.
 1. **All four create their branches FIRST** (before Amelia's push, this is
    what makes the conflicts happen): `Create a branch called <name>-round2`
 2. Everyone makes their change, commits, pushes, opens their PR.
