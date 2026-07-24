@@ -3,7 +3,12 @@
 A tiny interactive web app: a 10x10 grid of squares. Click one to claim it and
 watch the live counter and progress bar fill up.
 
-Open `index.html` in a browser to try it.
+**Live:**
+
+- The app: https://ameowsle.github.io/claim-a-square/
+- Our team wall: https://ameowsle.github.io/claim-a-square/team.html
+
+(Or open `index.html` / `team.html` locally in a browser.)
 
 ## How this was built
 
